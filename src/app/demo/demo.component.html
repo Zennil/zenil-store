@@ -1,3 +1,4 @@
+
 <input type="text" [(ngModel)]="title">
 
 {{title}}
@@ -21,8 +22,3 @@
     <button type="button" (click)="deleteItem(i)">Delete item</button>
   </li>
 </ul>
-
-<div class="product-grid">
-  <app-product *ngFor="let producto of products" [product]="producto" (productClicked)="productClicked($event)">
-  </app-product>
-</div>
