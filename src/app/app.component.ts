@@ -10,6 +10,8 @@ export class AppComponent {
 
   title = 'zenil-store';
 
+  power = 10;
+
   items = ['Edgar', 'Allan', 'Poe'];
 
   products: Product[] = [
