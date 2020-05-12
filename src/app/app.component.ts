@@ -15,42 +15,42 @@ export class AppComponent {
   products: Product[] = [
     {
       id: '1',
-      image: 'assets/images/camiseta.png',
+      image: 'assets/images/camiseta.jpg',
       title: 'Camiseta',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '2',
-      image: 'assets/images/hoodie.png',
+      image: 'assets/images/hoodie.jpg',
       title: 'Hoodie',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '3',
-      image: 'assets/images/mug.png',
+      image: 'assets/images/mug.jpg',
       title: 'Mug',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '4',
-      image: 'assets/images/pin.png',
+      image: 'assets/images/pin.jpg',
       title: 'Pin',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '5',
-      image: 'assets/images/stickers1.png',
+      image: 'assets/images/stickers1.jpg',
       title: 'Stickers',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '6',
-      image: 'assets/images/stickers2.png',
+      image: 'assets/images/stickers2.jpg',
       title: 'Stickers',
       price: 80000,
       description: 'bla bla bla bla bla'

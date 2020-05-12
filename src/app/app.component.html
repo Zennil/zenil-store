@@ -19,6 +19,7 @@
   </li>
 </ul>
 
-<div *ngFor="let producto of products">
-  <app-product [product]="producto" (productClicked)="productClicked($event)"></app-product>
+<div class="product-grid">
+  <app-product *ngFor="let producto of products" [product]="producto" (productClicked)="productClicked($event)">
+  </app-product>
 </div>
