@@ -1,6 +1,6 @@
 # Aplicación Web de una Tienda en linea
 
-Desarrollo de una tienda en linea. Donde se aprovecan las caracteristicas del framework **Angular** para construir una aplicación usando componentes, módulos y rutas, asi como, Angular Material para dar estilo.
+Desarrollo de una tienda en linea. Donde se aprovecan las caracteristicas del framework **Angular** para construir una aplicación usando componentes, módulos y rutas, asi como, **Angular Material** para dar estilo.
 Y al final el despliegue de la aplicación de e-commerce a Internet.
 
 ## Comenzando 🚀
