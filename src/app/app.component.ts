@@ -65,4 +65,8 @@ export class AppComponent {
     console.log(index);
     this.items.splice(index, 1);
   }
+
+  productClicked(msj: string) {
+    console.log(msj);
+  }
 }
