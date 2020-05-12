@@ -2,8 +2,6 @@
 
 {{title}}
 
-<app-product></app-product>
-
 <div [ngSwitch]="title">
   <p *ngSwitchCase="'Edgar'">Este es Edgar</p>
   <p *ngSwitchCase="'Allan'">Este es Allan</p>
@@ -21,8 +19,6 @@
   </li>
 </ul>
 
-<div *ngFor="let product of products">
-  {{ product.title }}
-  <img [src]="product.image" alt="">
-  {{ product.price }}
+<div *ngFor="let producto of products">
+  <app-product [product]="producto" (productClicked)="productClicked($event)"></app-product>
 </div>
