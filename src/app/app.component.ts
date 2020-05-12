@@ -16,42 +16,42 @@ export class AppComponent {
     {
       id: '1',
       image: 'assets/images/camiseta.jpg',
-      title: 'Camiseta',
+      title: 'Juguete',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '2',
       image: 'assets/images/hoodie.jpg',
-      title: 'Hoodie',
+      title: 'Cepillo',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '3',
       image: 'assets/images/mug.jpg',
-      title: 'Mug',
+      title: 'Atun',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '4',
       image: 'assets/images/pin.jpg',
-      title: 'Pin',
+      title: 'Laberinto',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '5',
       image: 'assets/images/stickers1.jpg',
-      title: 'Stickers',
+      title: 'Tazón',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
     {
       id: '6',
       image: 'assets/images/stickers2.jpg',
-      title: 'Stickers',
+      title: 'Cabezal',
       price: 80000,
       description: 'bla bla bla bla bla'
     },
