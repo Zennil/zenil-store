@@ -25,6 +25,7 @@ import { HighlightDirective } from './highlight.directive';
 // Pipes
 import { ExponentialPipe } from './exponential.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
