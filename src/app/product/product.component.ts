@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit, DoCheck, OnDestroy } from '@angular/core';
-import { Product } from '../product.model';
+import { Product } from 'src/app/product.model';
+
 
 @Component({
     selector: 'app-product',
@@ -29,7 +30,7 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy {
         console.log('4. NgDoCheck');
     }
 
-    ngOnDestroy(){
+    ngOnDestroy() {
         console.log('5. NgOnDestroy');
     }
 
