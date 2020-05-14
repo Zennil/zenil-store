@@ -31,7 +31,8 @@ ng serve -o
 
 * [npm](https://www.npmjs.com/) - Manejador de dependencias
 * [Angular Cli](https://cli.angular.io/) - Una interfaz de linea de comandos para Angular
-* [Visual Studio Code](https://code.visualstudio.com/) - Editor de código fuente
+* [Visual Studio Code](https://code.visualstudio.com/) - Editor de código fuen
+* [Angular Material](https://material.angular.io/) - Componentes "Material Design" para Angular
 
 ## Licencia 📄
 
