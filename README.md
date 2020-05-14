@@ -33,6 +33,7 @@ ng serve -o
 * [Angular Cli](https://cli.angular.io/) - Una interfaz de linea de comandos para Angular
 * [Visual Studio Code](https://code.visualstudio.com/) - Editor de código fuen
 * [Angular Material](https://material.angular.io/) - Componentes "Material Design" para Angular
+* [Flexbox Grid](http://flexboxgrid.com/) - Un sistema de rejillas basado en la propiedad **flex**
 
 ## Licencia 📄
 
