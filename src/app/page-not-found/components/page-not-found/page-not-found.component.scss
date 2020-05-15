@@ -1,6 +1,7 @@
 .background-gif{
     background-image: url('https://media.giphy.com/media/gngO1gmBhS9na/giphy.gif');
-    padding: 260px 0px;
+	// padding: 260px 0px;
+	height: 100vh;
 	text-align: center;
 	background-position: center center;
 	background-size: cover;
@@ -18,8 +19,12 @@
 	background-color: rgba(0,0,0,0.6);
 }
 
+.text-not-found{
+	padding-top: 50vh;
+}
+
 .background-gif h1 {
-	font-size: 60px;
+	font-size: 30px;
 	color: #fff;
 	position: relative
 }
@@ -30,4 +35,16 @@
 
 .background-gif h1 a:hover {
 	color:darkcyan;
+}
+
+@media (min-width: 576px){
+	.background-gif h1{
+		font-size: 45px;
+	}
+}
+
+@media (min-width: 768px){
+	.background-gif h1{
+		font-size: 60px;
+	}
 }
