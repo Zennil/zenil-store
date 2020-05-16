@@ -4,23 +4,60 @@
 //     padding: 0px;
 // }
 
+// MOBILE-FIRTS
+
 .product-grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 50px 20px;
+}
+.container{
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
+// SMALL
 @media (min-width: 576px){
     .product-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        max-width: 540px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 }
 
+// MEDIUM
 @media (min-width: 768px){
-    .product-grid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    .container{
+        max-width: 720px;
     }
 }
+
+// LARGE
+@media (min-width: 992px){
+    .product-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container{
+        max-width: 960px;
+    }
+}
+
+
+// EXTRA-   LARGE
+@media (min-width: 1200px){
+    .product-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .container{
+        max-width: 1140px;
+    }
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
