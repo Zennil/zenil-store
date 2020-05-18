@@ -11,6 +11,7 @@ import { InventarioComponent } from './components/inventario/inventario.componen
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ProductsListComponent } from './components/products-list/products-list.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MatSortModule } from '@angular/material/sort';
     ProductFormComponent,
     NavComponent,
     DashboardComponent,
-    InventarioComponent
+    InventarioComponent,
+    ProductsListComponent
   ],
   imports: [
     CommonModule,
