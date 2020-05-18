@@ -23,4 +23,12 @@ export class ProductsService {
     return this.http.post<Product>(`${environment.url_api}/products`, product);
   }
 
+  updateProdcut(id: string, changes: Partial<Product>): Observable<Product> {
+    return this.http.put<Product>(`${environment.url_api}/products/${id}`, changes);
+  }
+
+  deleteProduct(id: string): Observable<boolean> {
+    return this.http.delete<boolean>(`${environment.url_api}/products/${id}`);
+  }
+
 }
