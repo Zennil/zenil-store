@@ -28,4 +28,17 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  createProduct() {
+    const newProduct: Product = {
+      id: '929',
+      title: 'Nuevo producto',
+      image: 'assets/images/mug.png',
+      description: 'Producto creado desde Angular',
+      price: 2121
+    };
+    this.productsService.createProduct(newProduct).subscribe(productCreated => {
+      console.log(productCreated);
+    });
+  }
+
 }
