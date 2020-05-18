@@ -7,13 +7,15 @@ import { HighlightDirective } from './directives/highlight/highlight.directive';
 import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     ExponentialPipe,
-    HighlightDirective
+    HighlightDirective,
+    CartComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { MaterialModule } from '../material/material.module';
     HeaderComponent,
     FooterComponent,
     ExponentialPipe,
-    HighlightDirective
+    HighlightDirective,
+    CartComponent
   ]
 })
 export class SharedModule { }
