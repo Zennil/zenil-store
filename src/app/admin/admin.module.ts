@@ -8,10 +8,8 @@ import { MaterialModule } from '../material/material.module';
 import { NavComponent } from './components/nav/nav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InventarioComponent } from './components/inventario/inventario.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
 import { ProductsListComponent } from './components/products-list/products-list.component';
+import { FormProductComponent } from './components/form-product/form-product.component';
 
 
 @NgModule({
@@ -20,7 +18,8 @@ import { ProductsListComponent } from './components/products-list/products-list.
     NavComponent,
     DashboardComponent,
     InventarioComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    FormProductComponent
   ],
   imports: [
     CommonModule,
