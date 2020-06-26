@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
 import { CartComponent } from './components/cart/cart.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CartComponent } from './components/cart/cart.component';
   imports: [
     CommonModule,
     RouterModule,
+    ReactiveFormsModule,
     MaterialModule
   ],
   exports: [
