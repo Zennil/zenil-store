@@ -1,14 +1,42 @@
-<form [formGroup]="form">
-    <mat-form-field >
-        <input matInput type="text" formControlName="id">
-    </mat-form-field>
-    <mat-form-field >
-        <input matInput type="text" formControlName="title">
-    </mat-form-field>
-    <mat-form-field >
-        <input matInput type="number" formControlName="price">
-    </mat-form-field>
-    <mat-form-field >
-        <input matInput type="text" formControlName="description">
-    </mat-form-field>
+<form [formGroup]="form" (ngSubmit)="saveProduct($event)">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                Producto
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-xs">
+                    <mat-form-field>
+                        <input matInput placeholder="ID" type="text" formControlName="id">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs">
+                    <mat-form-field>
+                        <input matInput placeholder="Titulo" type="text" formControlName="title">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs">
+                    <mat-form-field>
+                        <input matInput placeholder="Precio" type="number" formControlName="price">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs">
+                    <mat-form-field>
+                        <textarea matInput placeholder="Descripción" formControlName="description"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <mat-card-actions>
+                <button mat-raised-button type="submit">Guardar</button>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
 </form>
