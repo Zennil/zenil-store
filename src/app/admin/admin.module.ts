@@ -10,6 +10,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InventarioComponent } from './components/inventario/inventario.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormProductComponent } from './components/form-product/form-product.com
     DashboardComponent,
     InventarioComponent,
     ProductsListComponent,
-    FormProductComponent
+    FormProductComponent,
+    ProductEditComponent
   ],
   imports: [
     CommonModule,
