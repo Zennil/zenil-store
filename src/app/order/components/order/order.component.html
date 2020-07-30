@@ -1,0 +1,33 @@
+<mat-horizontal-stepper>
+    <mat-step>
+        <ng-template matStepLabel>Productos agregados</ng-template>
+        <div *ngIf="(products$ | async) as productos">
+            <h2 *ngIf="productos.length === 0">Aun no hay productos en el carrito</h2>
+            <div class="row" *ngFor="let item of productos">
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                    <div class="box">
+                        <img class="image" [src]="item.image" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-5">
+                    <div class="box">
+                        <h2>{{ item.title }}</h2>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="box">
+                        <h2>{{ item.price | currency}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Datos personales</ng-template>
+        <h2>Fromulario de datos personales</h2>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Pago</ng-template>
+        <h2>Formulario de pago</h2>
+    </mat-step>
+</mat-horizontal-stepper>
