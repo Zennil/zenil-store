@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/core/services/auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) {
     this.buidlForm();
   }
@@ -32,8 +34,11 @@ export class LoginComponent implements OnInit {
     ev.preventDefault();
     if (this.loginForm.valid) {
       const value = this.loginForm.value;
-      this.authService.createUser(value.email, value.password).then(respo => {
+      this.authService.login(value.email, value.password).then(respo => {
         console.log(respo);
+        this.router.navigate(['/admin']);
+      }).catch(() => {
+        alert('Credenciales invalidas');
       });
     }
   }
