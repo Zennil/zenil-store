@@ -1,0 +1,32 @@
+<div class="row center-xs" style="padding-top: 15px;">
+    <div class="col-xs-3">
+        <div class="box">
+            <form [formGroup]="registerForm" (ngSubmit)="registrar($event)">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>
+                            Registrarse
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="col-xs">
+                            <mat-form-field>
+                                <input matInput placeholder="Email" type="text" formControlName="email">
+                            </mat-form-field>
+                        </div>
+                        <div class="col xs">
+                            <mat-form-field>
+                                <input matInput placeholder="Contraseña" type="password" formControlName="password">
+                            </mat-form-field>
+                        </div>
+                        <mat-card-actions>
+                            <button mat-raised-button type="submit" [disabled]="registerForm.invalid">
+                                Registrarse
+                            </button>
+                        </mat-card-actions>
+                    </mat-card-content>
+                </mat-card>
+            </form>
+        </div>
+    </div>
+</div>
